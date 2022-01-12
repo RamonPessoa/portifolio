@@ -1,0 +1,36 @@
+@use '../../sass/Variables' as *
+.hero
+    color: white
+    display: flex
+    width: 85vw
+    margin-left: auto
+    margin-right: auto
+    gap: 1em
+    margin-top: 7em
+    flex-direction: column
+    .hero_info
+        display: flex
+        gap: 1.7em
+        align-items: center
+        .hero_text
+            text-align: center
+            p
+                font-family: padrao
+                font-size: 1.7em
+    img
+        width: 17em
+    h1
+        font-family: padrao
+        font-size: 5em
+    .hero_buttons
+        margin-left: 7.8em
+        display: flex
+        gap: 1.7em
+        button
+            background-color: $secondary-color
+            border: none
+            font-size: 1.8em
+            padding: 15px
+            border-radius: 5px
+            &:hover
+                cursor: pointer
