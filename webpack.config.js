@@ -35,7 +35,9 @@ module.exports = {
     alias:{
       "@": path.resolve(__dirname),
       "@fonts": path.resolve(__dirname, "./src/assets/fonts"),
-      "@imgs": path.resolve(__dirname, "./src/assets/imgs")
+      "@icons": path.resolve(__dirname, "./src/assets/icons"),
+      "@imgs": path.resolve(__dirname, "./src/assets/imgs"),
+      "@components": path.resolve(__dirname, "./src/components"),
     },
     extensions:['.svg','.png','.sass','.tsx', '.jsx', '...']
   }

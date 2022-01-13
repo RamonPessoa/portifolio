@@ -31,7 +31,9 @@
     "paths": {
       "@/*": ["./*"],
       "@fonts/*": ["./src/assets/fonts/*"],
-      "@imgs/*": ["./src/assets/imgs/*"]
+      "@icons/*": ["./src/assets/icons/*"],
+      "@imgs/*": ["./src/assets/imgs/*"],
+      "@components/*": ["./src/components/*"]
     },                                      /* Specify a set of entries that re-map imports to additional lookup locations. */
     // "rootDirs": [],                                   /* Allow multiple folders to be treated as one when resolving modules. */
     // "typeRoots": [],                                  /* Specify multiple folders that act like `./node_modules/@types`. */

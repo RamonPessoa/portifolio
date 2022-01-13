@@ -1,13 +1,21 @@
-.skills
+@use '~/src/sass/mixins'
+
+.skills_section
     color: white
     font-family: padrao
     width: 100%
     background-color: #77569f
-    margin-top: 20em
-    height: 90vh
+    padding: 5em
     display: flex
+    gap: 5em
     align-items: center
     flex-direction: column
-    h1
-        margin-top: .8em
-        font-size: 5em
+    .skills
+        display: flex
+        flex-wrap: wrap
+        width: 100%
+        justify-content: space-around
+    .known_skills
+        @include mixins.skills
+    .learning_skills
+        @include mixins.skills
