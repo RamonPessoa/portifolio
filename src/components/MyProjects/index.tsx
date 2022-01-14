@@ -18,7 +18,7 @@ const MyProjects = ()=>{
     }
 
     return(
-        <section className="projects_section">
+        <section id='projetos' className="projects_section">
             <h2>Projetos</h2>
             <div className="projects_area">
                 <Project img={portifolioIcon} alt="portifolio" projectName={projects.portifolio.name} description={projects.portifolio.description}/>

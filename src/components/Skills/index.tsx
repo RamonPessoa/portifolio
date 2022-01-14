@@ -11,7 +11,7 @@ import SkillsBar from './SkillBar'
 
 const Skills = ()=>{
     return(
-        <section className="skills_section">
+        <section id='skills' className="skills_section">
             <h2>Skills</h2>
             <div className='skills'>
                 <div className='known_skills'>

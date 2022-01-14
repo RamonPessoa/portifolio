@@ -20,7 +20,7 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
       },
       {
-        test: /\.(jpe?g|png|gif|woff|woff2|eot|ttf|svg)(\?[a-z0-9=.]+)?$/,
+        test: /\.(jpe?g|png|gif|woff|woff2|eot|ttf|svg|pdf)(\?[a-z0-9=.]+)?$/,
         loader: 'url-loader' }
     ]
   },
@@ -39,6 +39,6 @@ module.exports = {
       "@imgs": path.resolve(__dirname, "./src/assets/imgs"),
       "@components": path.resolve(__dirname, "./src/components"),
     },
-    extensions:['.svg','.png','.sass','.tsx', '.jsx', '...']
+    extensions:['.ts','.svg','.png','.sass','.tsx', '.jsx', '...']
   }
 }
