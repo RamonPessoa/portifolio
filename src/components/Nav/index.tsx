@@ -1,25 +1,30 @@
-import { Nav } from './style'
-import Curriculo from '@/src/assets/download/Curriculo.pdf'
-import Button from '../Button'
+import React from 'react';
+import { Container } from './style';
+import Drop from './Drop';
 
-const NavMenu = ()=>{
-
-const handleScroll = (direction: string) =>{
-  const element = document.querySelector(direction)
-  element?.scrollIntoView({behavior: 'smooth'})
+export default function index() {
+  return (
+    <Container>
+      <h2>Portifólio</h2>
+      <ul>
+        <li>
+          <a href='#about'>Sobre mim</a>
+          <div className='menu-underline'></div>
+        </li>
+        <li>
+          <a href='#projects'>Projetos</a>
+          <div className='menu-underline'></div>
+        </li>
+        <li>
+          <a href='#services'>Serviços</a>
+          <div className='menu-underline'></div>
+        </li>
+        <li>
+          <a href='#skills'>Minhas Skills</a>
+          <div className='menu-underline'></div>
+        </li>
+      </ul>
+      <Drop />
+    </Container>
+  );
 }
-
-  return(
-      <Nav id='nav'>
-        <ul>
-          <li><a onClick={e => handleScroll("#skills")}>Skills</a></li>
-          <li><a onClick={e => handleScroll("#projetos")}>Projetos</a></li>
-          <li><a onClick={e => handleScroll("#sobre")}>Sobre</a></li>
-          <li><a onClick={e => handleScroll("#contatos")}>Contatos</a></li>
-          <Button value='Download CV' link={Curriculo}></Button>
-        </ul>
-      </Nav>
-  )
-}
-
-export default NavMenu

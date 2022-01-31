@@ -1,31 +1,25 @@
-import './style'
-import portifolioicon from '@imgs/portfolioIcon.png'
-import Button from '@components/Button'
-import Curriculo from '@/src/assets/download/Curriculo.pdf'
+import React from 'react';
+import { Container } from './style';
+import logo from '../../assets/logo.svg';
 
-const Hero = () => {
-
-    const handleScroll = (direction: string) =>{
-        const element = document.querySelector(direction)
-        element?.scrollIntoView({behavior: 'smooth'})
-      }
-
-
-    return(
-        <section className="hero">
-                <div className='hero_info'>
-                    <img src={portifolioicon} alt="documento" />
-                    <div className='hero_text'>
-                        <h1>Ramon Pessoa</h1>
-                        <p>{`<Desenvolvedor Web Front-End>`}</p>
-                    </div>
-                </div>
-                <div className='hero_buttons'>
-                    <Button value="Download CV" link={Curriculo}/>
-                    <button onClick={e=> handleScroll("#contatos")}>Contatos</button>
-                </div>
-        </section>
-    )
+export default function Hero() {
+  return (
+    <Container>
+      <div className="content">
+        <h1>Olá, eu sou o Ramon Pessoa</h1>
+        <p>Desenvolvedor Front-End</p>
+        <div className="buttons">
+          <button className="button download">
+            <div className="circleD"></div>
+            <span>Download CV</span>
+          </button>
+          <button className="button contato">
+            <div className="circleC"></div>
+            <span>Entrar em Contato</span>
+          </button>
+        </div>
+      </div>
+      <img src={logo} />
+    </Container>
+  );
 }
-
-export default Hero

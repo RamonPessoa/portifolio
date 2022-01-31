@@ -6,25 +6,19 @@ export const Container = styled.section`
   width: 90%;
   max-width: 1160px;
   margin: auto;
-  gap: 30px;
   align-items: center;
-  padding-top: 160px;
+  gap: 30px;
+  padding-top: 127px;
+  padding-bottom: 127px;
   h2 {
     font-size: 3.2rem;
   }
-  p {
+  .projects {
+    display: grid;
     width: 100%;
-    max-width: 800px;
-    text-align: center;
-    color: #828282;
-  }
-  .contacts {
-    padding-top: 55px;
-    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 350px));
+    gap: 45px;
     justify-items: center;
     justify-content: center;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 0.6fr));
-    gap: 40px;
   }
 `;

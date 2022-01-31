@@ -1,46 +1,42 @@
-import styled from 'styled-components'
-import { color } from '@/src/styles/variables'
+import styled from 'styled-components';
 
-export const Nav = styled.nav`
+export const Container = styled.nav`
+  width: 90%;
+  max-width: 1160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 30px;
+
+  ul {
+    list-style: none;
     display: flex;
-    justify-content: right;
-    width: 70vw;
-    margin-left: auto;
-    margin-right: auto;
+    li {
+      display: inline;
+      display: flex;
+      flex-direction: column;
 
-    ul{
-        list-style: none;
-        margin-top: 15px;
-
-        li {
-            font-size: 1.5em;
-            display: inline;
-
-            :hover{
-                    cursor: pointer;
-                }
-
-            a{
-                padding: 10px;
-                text-decoration: none;
-                color: white;
-                display: inline-block;
-            }
-        }
-
-        button{
-            height: 50px;
-            background-color: ${color.tertiary};
-            border: none;
-            border-radius: 5px;
-            color: #eee;
-            padding: 15px;
-            font-size: 18px;
-            color: #eee;
-
-            :hover{
-                cursor: pointer;
-            }
-        }
+      a {
+        text-decoration: none;
+        color: #f9f9f9;
+        padding: 10px;
+      }
+      .menu-underline {
+        transition: 0.3s;
+        height: 2px;
+        width: 0;
+        align-self: center;
+      }
+      :hover > .menu-underline {
+        width: 100%;
+        background: #00df5e;
+      }
     }
-`
+  }
+  @media (max-width: 585px) {
+    ul {
+      display: none;
+    }
+  }
+`;

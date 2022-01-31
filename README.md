@@ -1,14 +1,46 @@
-<h1 align="center">Meu Portfólio</h1>
-<h4 align="center">🚧  🚀Em Construção!! 🚧</h4>
-<p align="center">Você encontrará informações sobre mim, como projetos, habilidades, experiências e etc...</p>
+<h1>Portifólio</h1>
 
-<h3>Sumário:</h3>
-<a href="#sobre">Sobre</a>
+<img src="preview.gif"></img>
 
-<h2 id="sobre">Sobre</h2>
-<p>A ideia deste projeto, é poder falar um pouco sobre mim, ao mesmo tempo que mostrar meus conhecimentos de desenvolvimento web</p>
-  <h3>Tecnologias Utiliazadas:</h3>
-    - React<br/>
-    - styled-components<br/>
-    - Webpack<br/>
-    - Typescript<br/>
+## 🤖 Tecnologias utilizadas
+* React
+* styled-components
+* typescript
+* Vite
+* ESLint
+* Prettier
+
+## 💻 Pré-requisitos
+Antes de começar, verifique se você atendeu oas seguintes requisitos:
+* Ter um gerenciador de pacotes instalado, como: yarn ou npm
+* Ter o git instalado
+
+## 🚀 Instalando Portifólio
+Para clonar este repositório siga os seguintes passos:
+* abra o terminal na pasta desejada
+* digite o seguinte comando:
+```
+  git clone https://github.com/RamonPessoa/portifolio.git
+```
+## ☕ Usando Portifólio
+Utilize os seguintes comandos no terminal na pasta do repositório clonado:
+```html
+  yarn <!-- Iinstala todas as dependencias com o yarn -->
+
+  OU
+
+  npm install <!-- instala todas as dependencias com npm -->
+```
+
+Após instalar as dependências:
+```html
+  yarn dev <!-- Inicia o servidor de desenvolvimento-->
+  yarn build <!-- constrói o projeto para produção-->
+  yarn preview <!-- Inicia o servidor para preview em produção-->
+
+  OU
+
+  npm run dev <!-- Inicia o servidor de desenvolvimento-->
+  npm run build <!-- constrói o projeto para produção-->
+  npm run preview <!-- Inicia o servidor para preview em produção-->
+```
