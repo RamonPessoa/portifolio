@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from './style';
-import ContactButtons from './ContactButtons';
+import ContactButtons from '../ContactButtons';
 import smile from '../../assets/smile.svg';
 import email from '../../assets/email.svg';
 import phone from '../../assets/phone.svg';
@@ -16,13 +16,24 @@ export default function index() {
         aprender bastante na base da tentativa e erro
       </p>
       <div className='contacts'>
-        <ContactButtons img={smile} label='Meu Nome' info='Ramon Pessoa' />
         <ContactButtons
+          class='vertical-contact'
+          img={smile}
+          label='Meu Nome'
+          info='Ramon Pessoa'
+        />
+        <ContactButtons
+          class='vertical-contact'
           img={email}
           label='E-mail'
           info='reimund.programmer@gmail.com'
         />
-        <ContactButtons img={phone} label='Telefone' info='(21)99624-5808' />
+        <ContactButtons
+          class='vertical-contact'
+          img={phone}
+          label='Telefone'
+          info='(21)xxxx-xxxx'
+        />
       </div>
     </Container>
   );
