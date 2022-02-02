@@ -1,5 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
 
+type myProps = {
+  design?: string;
+};
+
 export const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: DM Sans;
@@ -21,6 +25,7 @@ export const GlobalStyle = createGlobalStyle`
     color: #F9F9F9;
     font-family: 'DM Sans', sans-serif;
     font-size: 1.6rem;
+    overflow: ${(props: myProps) => props.design};
   }
 
   .to-top {

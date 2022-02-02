@@ -8,18 +8,21 @@ import Services from './components/Services';
 import Skills from './components/Skills';
 import Totop from './components/ToTop';
 import ModalContext from './contexts/ModalContext';
+import MenuContext from './contexts/MenuContext';
 
 function App() {
   return (
     <ModalContext>
-      <GlobalStyle />
-      <Nav />
-      <Hero />
-      <About />
-      <Projects />
-      <Services />
-      <Skills />
-      <Totop />
+      <MenuContext>
+        <GlobalStyle />
+        <Nav />
+        <Hero />
+        <About />
+        <Projects />
+        <Services />
+        <Skills />
+        <Totop />
+      </MenuContext>
     </ModalContext>
   );
 }

@@ -5,6 +5,7 @@ export const Container = styled.div`
   flex-direction: column;
   gap: 7px;
   padding: 10px;
+  z-index: 400;
   :hover {
     cursor: pointer;
   }
