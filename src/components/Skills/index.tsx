@@ -1,11 +1,7 @@
 import React from 'react';
 import Skill from './Skill';
 import { Container } from './style';
-import html from '../../assets/html.svg';
-import css from '../../assets/css.svg';
-import js from '../../assets/js.svg';
-import ts from '../../assets/ts.svg';
-import react from '../../assets/react.svg';
+import { html, css, js, ts, react } from '@imports/skills';
 
 export default function Skills() {
   return (

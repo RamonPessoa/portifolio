@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container } from './style';
 import Service from './Service';
-import code from '../../assets/code.svg';
-import smartphone from '../../assets/smartphone.svg';
+import code from '@assets/code.svg';
+import smartphone from '@assets/smartphone.svg';
 
 export default function index() {
   return (

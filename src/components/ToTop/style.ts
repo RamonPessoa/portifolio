@@ -6,4 +6,7 @@ export const Container = styled.img`
   position: fixed;
   bottom: 40px;
   right: 40px;
+  :hover {
+    cursor: pointer;
+  }
 `;

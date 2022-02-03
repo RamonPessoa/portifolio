@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import upArrow from '../../assets/up-arrow.svg';
+import upArrow from '@assets/up-arrow.svg';
 import { Container } from './style';
 
 export default function index() {

@@ -2,7 +2,7 @@ import React from 'react';
 import { Container } from './style';
 import Drop from './Drop';
 import Menu from './Menu';
-import MenuContext from '../../contexts/MenuContext';
+import MenuContext from '@contexts/MenuContext';
 
 export default function index() {
   return (

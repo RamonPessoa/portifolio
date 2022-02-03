@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import Section from '@components/Section';
 
-export const Container = styled.section`
+export const Container = styled(Section)`
   display: flex;
   width: 90%;
   margin: auto;
@@ -8,10 +9,6 @@ export const Container = styled.section`
   flex-direction: column;
   align-items: center;
   gap: 30px;
-
-  h2 {
-    font-size: 3.2rem;
-  }
 
   .content {
     display: grid;

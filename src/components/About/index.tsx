@@ -1,9 +1,9 @@
 import React from 'react';
 import { Container } from './style';
-import ContactButtons from '../ContactButtons';
-import smile from '../../assets/smile.svg';
-import email from '../../assets/email.svg';
-import phone from '../../assets/phone.svg';
+import ContactButtons from '@components/ContactButtons';
+import smile from '@assets/smile.svg';
+import email from '@assets/email.svg';
+import phone from '@assets/phone.svg';
 
 export default function index() {
   return (

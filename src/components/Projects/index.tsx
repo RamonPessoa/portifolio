@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from './style';
 import Project from './Project';
-import portifolio from '../../assets/portifolio.png';
+import { calculadora, cadastro, compras, portifolio } from '@imports/projects';
 
 export default function Projects() {
   return (
@@ -11,12 +11,22 @@ export default function Projects() {
         <Project
           img={portifolio}
           title='Portifólio'
-          description='Tecnologias: HTML, CSS, TypeScript, React'
+          description='Tecnologias: React, TypeScript, styled-components'
         />
         <Project
-          img={portifolio}
-          title='Portifólio'
-          description='Tecnologias: HTML, CSS, TypeScript, React'
+          img={calculadora}
+          title='Calculadora'
+          description='Tecnologias: HTML, CSS, JavaScript'
+        />
+        <Project
+          img={cadastro}
+          title='Tela de cadastro'
+          description='Tecnologias: React, TypeScript, styled-components'
+        />
+        <Project
+          img={compras}
+          title='Lista de compras'
+          description='Tecnologias: React, JavaScript, Sass'
         />
       </div>
     </Container>

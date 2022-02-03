@@ -25,6 +25,12 @@ export const Container = styled.div`
       display: flex;
       gap: 10px;
 
+      a {
+        max-width: 150px;
+        width: 100%;
+        text-decoration: none;
+      }
+
       .button {
         padding: 15px;
         background: #00df5e;

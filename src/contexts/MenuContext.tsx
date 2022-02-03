@@ -26,7 +26,7 @@ export function useMenu() {
 
   const handleClick = (e: React.MouseEvent) => {
     if (setMenuDesign) {
-      if (menuDesign === 1) {
+      if (menuDesign === 1 && window.innerWidth < 587) {
         setMenuDesign(2);
       } else {
         setMenuDesign(1);

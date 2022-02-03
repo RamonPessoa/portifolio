@@ -1,9 +1,9 @@
 import React from 'react';
 import { Container } from './style';
-import ContactButtons from '../ContactButtons';
-import { useModal } from '../../contexts/ModalContext';
-import phone from '../../assets/phone.svg';
-import email from '../../assets/email.svg';
+import ContactButtons from '@components/ContactButtons';
+import { useModal } from '@contexts/ModalContext';
+import phone from '@assets/phone.svg';
+import email from '@assets/email.svg';
 
 export default function index() {
   const { handleClick } = useModal();

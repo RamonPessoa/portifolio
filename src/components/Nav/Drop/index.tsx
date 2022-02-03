@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from './style';
-import { useMenu } from '../../../contexts/MenuContext';
+import { useMenu } from '@contexts/MenuContext';
 
 export default function Drop() {
   const { handleClick } = useMenu();
