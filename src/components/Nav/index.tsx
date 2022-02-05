@@ -9,7 +9,7 @@ export default function index() {
 
   return (
     <Container ref={buildRefs('nav')}>
-      <h2>Portifólio</h2>
+      <h2>Portfolio</h2>
       <Menu />
       <Drop />
     </Container>
