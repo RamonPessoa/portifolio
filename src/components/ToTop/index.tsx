@@ -1,18 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import upArrow from '@assets/up-arrow.svg';
 import { Container } from './style';
+import { useRefs, Section } from '@contexts/RefsContext';
 
 export default function index() {
   const [show, setShow] = useState<boolean>(false);
+  const { allRefs } = useRefs();
 
-  const handleToTop = (e: React.MouseEvent) => {
-    e.preventDefault();
-    window.scrollTo(0, 0);
+  const handleToTop = (section: Section) => {
+    allRefs.current[section].scrollIntoView();
   };
 
   const renderArrow = () => {
     if (show) {
-      return <Container onClick={handleToTop} src={upArrow} />;
+      return <Container onClick={() => handleToTop('nav')} src={upArrow} />;
     }
     return null;
   };

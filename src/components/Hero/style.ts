@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { colors } from '../../styles/variables';
 
 export const Container = styled.div`
   display: flex;
@@ -18,7 +19,7 @@ export const Container = styled.div`
       max-width: 328px;
     }
     p {
-      color: #828282;
+      color: ${colors.textGrey};
       font-size: 2rem;
     }
     .buttons {
@@ -33,7 +34,7 @@ export const Container = styled.div`
 
       .button {
         padding: 15px;
-        background: #00df5e;
+        background: ${colors.secondaryBackground};
         position: relative;
         border: 1px solid #333333;
         max-width: 150px;
@@ -43,7 +44,7 @@ export const Container = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #171717;
+        color: ${colors.primaryBackground};
         font-weight: bold;
 
         span {
@@ -52,7 +53,7 @@ export const Container = styled.div`
         }
 
         :hover > span {
-          color: #f9f9f9;
+          color: ${colors.whiter};
         }
 
         :hover {
@@ -71,20 +72,20 @@ export const Container = styled.div`
           width: 0;
           height: 150%;
           border-radius: 50%;
-          background: #171717;
+          background: ${colors.primaryBackground};
           transition: 0.5s;
         }
 
         .circleC {
-          background: #f9f9f9;
+          background: ${colors.whiter};
         }
       }
       .contato {
-        background: #171717;
-        color: #f9f9f9;
+        background: ${colors.primaryBackground};
+        color: ${colors.whiter};
 
         :hover > span {
-          color: #171717;
+          color: ${colors.primaryBackground};
         }
       }
     }

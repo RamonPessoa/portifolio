@@ -1,6 +1,24 @@
 import styled from 'styled-components';
+import { colors } from '@styles/variables';
 
 export const Container = styled.div`
+  .icon {
+    width: 62px;
+    height: 62px;
+    background: ${colors.tertiaryBackground};
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    :hover {
+      transform: scale(1.2);
+    }
+
+    img {
+      max-height: 40px;
+    }
+  }
   .vertical-contact {
     text-align: center;
     display: grid;
@@ -17,5 +35,8 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     gap: 20px;
+    p {
+      color: ${colors.textGrey};
+    }
   }
 `;

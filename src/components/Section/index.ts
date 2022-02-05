@@ -8,7 +8,7 @@ const Section = styled.section`
   margin: auto;
   align-items: center;
   gap: 30px;
-  padding-top: 127px;
+  margin-top: 127px;
 
   h2 {
     font-size: 3.2rem;

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { colors } from '@styles/variables';
 
 export const Container = styled.div`
   @keyframes modalAnimation {
@@ -32,21 +33,21 @@ export const Container = styled.div`
     padding: 50px;
     border-radius: 10px;
     align-items: center;
-    border: 7px solid #212121;
+    border: 7px solid ${colors.tertiaryBackground};
     gap: 30px;
     background: #171717;
 
     .x-button {
       display: flex;
       justify-content: center;
-      border: 5px solid #212121;
+      border: 5px solid ${colors.tertiaryBackground};
       align-items: center;
       position: absolute;
       top: -25px;
       right: -25px;
       width: 60px;
       height: 60px;
-      background: #171717;
+      background: ${colors.primaryBackground};
       border-radius: 50%;
       :hover {
         cursor: pointer;
@@ -56,7 +57,7 @@ export const Container = styled.div`
         height: 4px;
         width: 25px;
         border-radius: 20px;
-        background: #f9f9f9;
+        background: ${colors.whiter};
       }
       .x-one {
         position: absolute;

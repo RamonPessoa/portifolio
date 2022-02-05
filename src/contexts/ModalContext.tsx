@@ -26,7 +26,6 @@ export function useModal() {
   const { showModal, setShowModal } = context;
 
   const handleClick = (e: React.MouseEvent) => {
-    e.preventDefault();
     if (setShowModal) {
       if ((e.target as Element).classList.contains('show-hide')) {
         setShowModal(!showModal);

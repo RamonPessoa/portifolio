@@ -5,17 +5,6 @@ import Projects from '@components/Projects';
 import Services from '@components/Services';
 import Skills from '@components/Skills';
 import Totop from '@components/ToTop';
-import ModalContext from '@contexts/ModalContext';
-import MenuContext from '@contexts/MenuContext';
+import GlobalContext from '@contexts/GlobalContext';
 
-export {
-  Nav,
-  Hero,
-  About,
-  Projects,
-  Services,
-  Skills,
-  Totop,
-  ModalContext,
-  MenuContext,
-};
+export { Nav, Hero, About, Projects, Services, Skills, Totop, GlobalContext };

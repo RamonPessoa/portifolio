@@ -8,24 +8,21 @@ import {
   Services,
   Skills,
   Totop,
-  ModalContext,
-  MenuContext,
+  GlobalContext,
 } from '@imports/app';
 
 function App() {
   return (
-    <ModalContext>
-      <MenuContext>
-        <GlobalStyle />
-        <Nav />
-        <Hero />
-        <About />
-        <Projects />
-        <Services />
-        <Skills />
-        <Totop />
-      </MenuContext>
-    </ModalContext>
+    <GlobalContext>
+      <GlobalStyle />
+      <Nav />
+      <Hero />
+      <About />
+      <Projects />
+      <Services />
+      <Skills />
+      <Totop />
+    </GlobalContext>
   );
 }
 

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { colors } from '@styles/variables';
 
 export const Container = styled.div`
   ul {
@@ -7,10 +8,13 @@ export const Container = styled.div`
     li {
       display: flex;
       flex-direction: column;
+      :hover {
+        cursor: pointer;
+      }
 
       a {
         text-decoration: none;
-        color: #f9f9f9;
+        color: ${colors.whiter};
         padding: 10px;
       }
       .menu-underline {
@@ -21,7 +25,7 @@ export const Container = styled.div`
       }
       :hover > .menu-underline {
         width: 100%;
-        background: #00df5e;
+        background: ${colors.secondaryBackground};
       }
     }
   }
@@ -42,7 +46,7 @@ export const Container = styled.div`
       position: absolute;
       left: 0;
       top: 0;
-      background: #212121;
+      background: ${colors.tertiaryBackground};
       animation-name: showMenu;
       animation-duration: 0.7s;
       @keyframes showMenu {

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import { colors } from '@styles/variables';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -7,10 +7,10 @@ export const Container = styled.div`
   max-width: 350px;
   width: 100%;
   padding: 30px;
-  background: #212121;
+  background: ${colors.tertiaryBackground};
   font-size: 3.2rem;
-  color: #828282;
-  border-bottom: 5px solid #00df5e;
+  color: ${colors.textGrey};
+  border-bottom: 5px solid ${colors.secondaryBackground};
 
   img {
     width: 58px;

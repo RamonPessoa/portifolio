@@ -7,5 +7,5 @@ export const Container = styled.nav`
   align-items: center;
   justify-content: space-between;
   margin: auto;
-  margin-top: 30px;
+  padding-top: 30px;
 `;

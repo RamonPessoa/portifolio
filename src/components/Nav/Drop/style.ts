@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { colors } from '@styles/variables';
 
 export const Container = styled.div`
   display: flex;
@@ -12,7 +13,7 @@ export const Container = styled.div`
   .menu-bar {
     height: 4px;
     width: 40px;
-    background: #f9f9f9;
+    background: ${colors.whiter};
   }
   @media (min-width: 586px) {
     display: none;

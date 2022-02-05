@@ -2,16 +2,16 @@ import React from 'react';
 import { Container } from './style';
 import Drop from './Drop';
 import Menu from './Menu';
-import MenuContext from '@contexts/MenuContext';
+import { useRefs } from '@contexts/RefsContext';
 
 export default function index() {
+  const { buildRefs } = useRefs();
+
   return (
-    <MenuContext>
-      <Container>
-        <h2>Portifólio</h2>
-        <Menu />
-        <Drop />
-      </Container>
-    </MenuContext>
+    <Container ref={buildRefs('nav')}>
+      <h2>Portifólio</h2>
+      <Menu />
+      <Drop />
+    </Container>
   );
 }
