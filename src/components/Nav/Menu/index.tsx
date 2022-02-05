@@ -4,7 +4,7 @@ import { useMenu } from '@contexts/MenuContext';
 import { useRefs, Section } from '@contexts/RefsContext';
 
 export default function index() {
-  const { menuDesign, handleClick } = useMenu();
+  const { menuDesign, handleClick, setMenuDesign } = useMenu();
   const { allRefs } = useRefs();
 
   const handleScroll = (section: Section) => {
@@ -16,13 +16,22 @@ export default function index() {
       ? (document.body.style.overflow = 'hidden')
       : (document.body.style.overflow = 'visible');
   }, [menuDesign]);
+
+  useEffect(() => {
+    window.addEventListener('resize', () => {
+      window.innerWidth > 587 ? setMenuDesign?.(1) : null;
+    });
+
+    return window.removeEventListener('resize', () => {});
+  }, []);
+
   return (
     <Container>
       <ul className={menuDesign === 1 ? '' : 'on'}>
         <li>
           <a
-            onClick={(e) => {
-              handleClick(e);
+            onClick={() => {
+              handleClick();
               handleScroll('about');
             }}
           >
@@ -32,8 +41,8 @@ export default function index() {
         </li>
         <li>
           <a
-            onClick={(e) => {
-              handleClick(e);
+            onClick={() => {
+              handleClick();
               handleScroll('projects');
             }}
           >
@@ -43,8 +52,8 @@ export default function index() {
         </li>
         <li>
           <a
-            onClick={(e) => {
-              handleClick(e);
+            onClick={() => {
+              handleClick();
               handleScroll('services');
             }}
           >
@@ -54,8 +63,8 @@ export default function index() {
         </li>
         <li>
           <a
-            onClick={(e) => {
-              handleClick(e);
+            onClick={() => {
+              handleClick();
               handleScroll('skills');
             }}
           >

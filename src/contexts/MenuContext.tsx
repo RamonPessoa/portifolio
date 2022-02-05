@@ -29,7 +29,7 @@ export default function MenuContext(props: myProps) {
 export function useMenu() {
   const { menuDesign, setMenuDesign } = useContext(menuContext);
 
-  const handleClick = (e: React.MouseEvent) => {
+  const handleClick = () => {
     if (setMenuDesign) {
       if (menuDesign === 1 && window.innerWidth < 587) {
         setMenuDesign(2);
