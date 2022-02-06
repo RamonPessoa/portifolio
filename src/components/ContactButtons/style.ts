@@ -39,4 +39,10 @@ export const Container = styled.div`
       color: ${colors.textGrey};
     }
   }
+
+  @media (max-width: 400px) {
+    .horizontal-contact {
+      transform: scale(0.83);
+    }
+  }
 `;

@@ -23,6 +23,7 @@ export const Container = styled.div`
   justify-content: center;
   z-index: 200;
   background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
 
   .modal {
     animation-name: modalAnimation;
@@ -36,6 +37,8 @@ export const Container = styled.div`
     border: 7px solid ${colors.tertiaryBackground};
     gap: 30px;
     background: #171717;
+    width: 90%;
+    max-width: 508px;
 
     .x-button {
       display: flex;
