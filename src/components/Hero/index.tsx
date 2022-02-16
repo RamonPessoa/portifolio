@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container } from './style';
 import logo from '@assets/logo.svg';
+import curriculo from '@assets/curriculo.pdf';
 import { useModal } from '@contexts/ModalContext';
 import ContactModal from '@components/ContactModal';
 
@@ -13,13 +14,10 @@ export default function Hero() {
           <h1>Olá, eu sou o Ramon Pessoa</h1>
           <p>Desenvolvedor Front-End</p>
           <div className='buttons'>
-            <a
-              href='https://docs.google.com/document/d/1B8Ru4jedRhcaP3C1eWX9_iEQUH47qnDnGt5lSLetcYU/edit?usp=sharing'
-              target='blank'
-            >
+            <a href={curriculo} download='Currículo_Ramon_Pessoa'>
               <button className='button download'>
                 <div className='circleD'></div>
-                <span>Ver Currículo</span>
+                <span>Baixar Currículo</span>
               </button>
             </a>
             <button className='button contato show-hide' onClick={handleClick}>
