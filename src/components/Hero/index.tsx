@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from './style';
 import logo from '@assets/logo.svg';
-import curriculo from '@assets/curriculo.pdf';
+import curriculo from '@assets/Ramon_Pessoa.pdf';
 import { useModal } from '@contexts/ModalContext';
 import ContactModal from '@components/ContactModal';
 
